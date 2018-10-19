@@ -8,7 +8,7 @@ def load_library(path="./lib/emoticons.yml")
     new_hash['get_meaning'][val.last] = meaning
     new_hash['get_emoticon'][val.first] = val.last
   end
-  new_hash
+  puts new_hash
 end
 
 def get_japanese_emoticon
