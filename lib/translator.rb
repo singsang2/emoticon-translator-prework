@@ -14,7 +14,7 @@ end
 def get_japanese_emoticon(path, emot)
   dictionary = load_library(path)
   if dictionary['get_emoticon'].keys.include?(emot)
-    diciontary['get_emoticon'][emot]
+    dictionary['get_emoticon'][emot]
   else
     puts "Sorry, that emoticon was not found"
   end
