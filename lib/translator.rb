@@ -13,7 +13,10 @@ end
 
 def get_japanese_emoticon(path, emot)
   dictionary = load_library(path)
-  dictionary['get_emoticon'][emot]
+  if dictionary['get_emoticon'].keys.include?(emot)
+    diciontary['get_emoticon'][emot]
+  else
+    ""
 end
 
 def get_english_meaning
